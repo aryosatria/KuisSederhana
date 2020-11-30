@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activty_main"
+    android:background="@android:color/holo_blue_light"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kuliner Khas Dari Indramayu Dan Cirebon Adalah : "
+        android:id="@+id/textView"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dodol"
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/radioButton"
+            android:onClick="onRadioButton"/>
+        <!--            android:layout_toLeftOf="@+id/radioGroup"-->
+        <!--            android:layout_toStartOf="@+id/radioGroup"-->
+        <!--            android:layout_below="@+id/radioGroup"/>-->
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Denedeng"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="onRadioButton"
+            android:layout_marginTop="36dp"
+            android:id="@+id/radioButton2"/>
+        <!--            android:layout_below="@+id/radioButton"-->
+        <!--            android:layout_alignLeft="@+id/radioButton"-->
+        <!--            android:layout_alignStart="@+id/radioButton"-->
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rumbah"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="onRadioButton"
+            android:layout_marginTop="26dp"
+            android:id="@+id/radioButton3"/>
+        <!--            android:layout_below="@+id/radioButton2"-->
+        <!--            android:layout_alignLeft="@+id/radioButton2"-->
+        <!--            android:layout_alignStart="@+id/radioButton2"/>-->
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rendang"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="onRadioButton"
+            android:layout_marginTop="39dp"
+            android:id="@+id/radioButton4"/>
+        <!--            android:layout_below="@+id/radioButton3"-->
+        <!--            android:layout_alignLeft="@+id/radioButton3"-->
+        <!--            android:layout_alignStart="@+id/radioButton3"-->
+
+    </RadioGroup>
+
+</RelativeLayout>
